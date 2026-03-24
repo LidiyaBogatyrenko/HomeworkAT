@@ -1,7 +1,6 @@
 package homework3_1;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Homework3_6 {
@@ -17,7 +16,6 @@ public class Homework3_6 {
         System.out.println("Введите необходимую длину массива: ");
         int size = scanner.nextInt();
 
-        Random random = new Random();
         int[] numbers = new int[size];
 
         System.out.println("Введите элементы массива");
@@ -29,7 +27,7 @@ public class Homework3_6 {
 
         boolean asc = true;
         for (int i = 0; i < numbers.length - 1; i++) {
-            if (numbers[i] > numbers[i + 1]) {
+            if (numbers[i] >= numbers[i + 1]) {
                 asc = false;
                 break;
             }

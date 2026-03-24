@@ -25,11 +25,9 @@ public class Homework3_1 {
         }
         System.out.println("Сгенерированный массив: " + Arrays.toString(numbers));
 
-        for (int i = 0; i < numbers.length / 2; i++) {
-            int temp = numbers[i];
-            numbers[i] = numbers[numbers.length - 1 - i];
-            numbers[numbers.length - 1 - i] = temp;
-        }
-        System.out.println("В обратном порядке: " + Arrays.toString(numbers));
+       System.out.print("В обратном порядке: ");
+       for (int i = numbers.length - 1; i >= 0; i--) {
+            System.out.print(numbers[i] + " ");
+       }
     }
 }
