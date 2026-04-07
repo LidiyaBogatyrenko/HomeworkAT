@@ -15,7 +15,6 @@ public class CreditCard {
 
     public void credit(int amount) {
         this.currentAmount += amount;
-        System.out.println();
     }
 
     public void debit(int amount) {
