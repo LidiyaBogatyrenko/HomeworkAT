@@ -25,17 +25,14 @@ public class Main {
         masterCard.credit(creditMC);
         System.out.println("Успешное пополнение баланса MasterCard +" + creditMC + "р.");
 
-        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Введите сумму пополнения VISA: ");
-        int creditVisa = scanner1.nextInt();
+        int creditVisa = scanner.nextInt();
         visa.credit(creditVisa);
         System.out.println("Успешное пополнение баланса VISA +" + creditVisa + "р.");
 
-        Scanner scanner2 = new Scanner(System.in);
         System.out.println("Введите сумму снятия с карты МИР");
-        int debitMir = scanner2.nextInt();
+        int debitMir = scanner.nextInt();
         mir.debit(debitMir);
-        System.out.println("Успешное снятие средств с карты МИР -" + debitMir + "р.");
 
         masterCard.getInfo();
         visa.getInfo();

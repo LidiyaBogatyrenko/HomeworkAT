@@ -14,21 +14,18 @@ public class Main {
     public static void main(String[] args) {
         Atm atm = new Atm(3, 2, 1);
 
-        Scanner scanner20 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Внесите купюры номиналом 20");
-        int addBanknote20 = scanner20.nextInt();
+        int addBanknote20 = scanner.nextInt();
 
-        Scanner scanner50 = new Scanner(System.in);
         System.out.println("Внесите купюры номиналом 50");
-        int addBanknote50 = scanner50.nextInt();
+        int addBanknote50 = scanner.nextInt();
 
-        Scanner scanner100 = new Scanner(System.in);
         System.out.println("Внесите купюры номиналом 100");
-        int addBanknote100 = scanner100.nextInt();
+        int addBanknote100 = scanner.nextInt();
 
         atm.addBanknotes(addBanknote20, addBanknote50, addBanknote100);
 
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Введите сумму для снятия наличных");
         int amount = scanner.nextInt();
 
